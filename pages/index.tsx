@@ -1,86 +1,67 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import picOne from "../public/images/pic1.jpg";
+import picTwo from "../public/images/pic2.jpg";
+import picThree from "../public/images/pic3.jpg";
+import picFour from "../public/images/pic4.jpg";
+import picSix from "../public/images/pic6.jpg";
+import picSeven from "../public/images/pic7.jpg";
+import picEight from "../public/images/pic8.jpg";
+import picNine from "../public/images/pic9.jpg";
+import NavBar from "../src/Navbar/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="m-2">
       <Head>
-        <title>Create Next App</title>
+        <title>Sandra Resende</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      
+      <main className="md:flex gap-2 bg-clr1">
+        <div className="md:pr-16 px-1 flex justify-between font-nhaas place-items-center">
+          <h1 className="text-2xl font-bold">Sandra Resende</h1>
+          <NavBar />
+        </div>
+        <div className="flex flex-col md:grid md:grid-cols-3 relative gap-2 mt-5">
+          <Image
+            src={picOne}
+            alt="pic1"
+            className="row-start-1 row-end-3"
+            style={{ height: "100%", width: "100%" }}
+          />
+          <Image src={picTwo} alt="pic2" className="row-start-1 row-end-2" />
+          <Image
+            src={picThree}
+            alt="pic3"
+            className="row-start-1 row-end-3"
+            style={{ height: "100%", width: "100%" }}
+          />
+          <Image
+            src={picFour}
+            alt="pic4"
+            className="col-start-2 row-start-2 row-end-3"
+          />
+          <Image src={picSix} alt="pic6" className="row-start-3 row-end-5" />
+          <Image src={picSeven} alt="pic7" className="row-start-3 row-end-5" />
+          <Image
+            src={picEight}
+            alt="pic8"
+            className="col-start-1 row-start-3 row-end-4 "
+            style={{ height: "100%", width: "100%" }}
+          />
+          <Image
+            src={picNine}
+            alt="pic9"
+            className=""
+            style={{ height: "100%", width: "100%" }}
+          />
         </div>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
