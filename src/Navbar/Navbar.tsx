@@ -7,22 +7,35 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="grid grid-cols-3 py-1 bg-black text-white gap-3">
-        <div className="flex justify-self-end items-center">
-          <button onClick={handleClick} className="pr-4 cursor-pointer">
-            {click ? <p>Menu</p> : ""}
-          </button>
-          <div className="flex items-center relative">
+      <nav className="md:hidden">
+        <div className="flex">
+          <button onClick={handleClick}>{click ? <p>Menu</p> : ""}</button>
+          <div className="flex relative">
             {click ? (
               ""
             ) : (
-              <div className="flex flex-col bg-red-200 text-black absolute -right-full top-8 p-4 z-20">
+              <div className="flex items-start bg-clr1 p-4 absolute -right-full -top-4 z-20">
                 <ul>
                   <li>Arquivo</li>
                   <li>Biografia</li>
                   <li>Contato</li>
                 </ul>
-                <button onClick={handleClick}>X</button>
+                <button onClick={handleClick}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 ml-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
               </div>
             )}
           </div>

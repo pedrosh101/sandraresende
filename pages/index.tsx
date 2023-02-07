@@ -9,21 +9,27 @@ import picSix from "../public/images/pic6.jpg";
 import picSeven from "../public/images/pic7.jpg";
 import picEight from "../public/images/pic8.jpg";
 import picNine from "../public/images/pic9.jpg";
+import NavBar from "../src/Navbar/Navbar";
 
 const Home: NextPage = () => {
   return (
-    <div className="m-2">
+    <div className="p-2 bg-clr1">
       <Head>
         <title>Sandra Resende</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="md:flex gap-2 bg-clr1">
-        <div className="md:pr-16 px-1 flex justify-between font-nhaas md:place-items-start place-items-center">
+      <main className="md:flex gap-2">
+        <div className="md:pr-16 px-1 flex md:flex-col justify-between md:justify-start font-nhaas md:place-items-start place-items-center">
           <h1 className="text-2xl font-bold">Sandra Resende</h1>
-
+          <ul className="hidden md:flex flex-col mt-1">
+            <li>Arquivo</li>
+            <li>Biografia</li>
+            <li>Contato</li>
+          </ul>
+          <NavBar />
         </div>
-        <div className="flex flex-col md:grid md:grid-cols-3 relative gap-2 mt-5">
+        <div className="flex flex-col md:grid md:grid-cols-3 relative gap-2 md:mt-0 mt-5">
           <Image
             src={picOne}
             alt="pic1"
