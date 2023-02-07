@@ -9,7 +9,6 @@ import picSix from "../public/images/pic6.jpg";
 import picSeven from "../public/images/pic7.jpg";
 import picEight from "../public/images/pic8.jpg";
 import picNine from "../public/images/pic9.jpg";
-import NavBar from "../src/Navbar/Navbar";
 
 const Home: NextPage = () => {
   return (
@@ -19,11 +18,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
       <main className="md:flex gap-2 bg-clr1">
-        <div className="md:pr-16 px-1 flex justify-between font-nhaas place-items-center">
+        <div className="md:pr-16 px-1 flex justify-between font-nhaas md:place-items-start place-items-center">
           <h1 className="text-2xl font-bold">Sandra Resende</h1>
-          <NavBar />
+
         </div>
         <div className="flex flex-col md:grid md:grid-cols-3 relative gap-2 mt-5">
           <Image
