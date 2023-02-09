@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import picOne from "../public/images/pic1.jpg";
 import picTwo from "../public/images/pic2.jpg";
 import picThree from "../public/images/pic3.jpg";
@@ -30,38 +31,52 @@ const Home: NextPage = () => {
           <NavBar />
         </div>
         <div className="flex flex-col md:grid md:grid-cols-3 relative gap-2 md:mt-0 mt-5">
-          <Image
-            src={picOne}
-            alt="pic1"
-            className="row-start-1 row-end-3"
-            style={{ height: "100%", width: "100%" }}
-          />
-          <Image src={picTwo} alt="pic2" className="row-start-1 row-end-2" />
-          <Image
-            src={picThree}
-            alt="pic3"
-            className="row-start-1 row-end-3"
-            style={{ height: "100%", width: "100%" }}
-          />
-          <Image
-            src={picFour}
-            alt="pic4"
+          <Link href="collection/1" className="row-start-1 row-end-3">
+            <Image
+              src={picOne}
+              alt="pic1"
+              style={{ height: "100%", width: "100%" }}
+            />
+          </Link>
+          <Link href="collection/2" className="row-start-1 row-end-2">
+            <Image src={picTwo} alt="pic2" />
+          </Link>
+          <Link href="collection/3" className="row-start-1 row-end-3">
+            <Image
+              src={picThree}
+              alt="pic3"
+              style={{ height: "100%", width: "100%" }}
+            />
+          </Link>
+          <Link
+            href="collection/4"
             className="col-start-2 row-start-2 row-end-3"
-          />
-          <Image src={picSix} alt="pic6" className="row-start-3 row-end-5" />
-          <Image src={picSeven} alt="pic7" className="row-start-3 row-end-5" />
-          <Image
-            src={picEight}
-            alt="pic8"
+          >
+            <Image src={picFour} alt="pic4" />
+          </Link>
+          <Link href="collection/5" className="row-start-3 row-end-5">
+            <Image src={picSix} alt="pic6" />
+          </Link>
+          <Link href="collection/6" className="row-start-3 row-end-5">
+            <Image src={picSeven} alt="pic7" />
+          </Link>
+          <Link
+            href="collection/7"
             className="col-start-1 row-start-3 row-end-4 "
-            style={{ height: "100%", width: "100%" }}
-          />
-          <Image
-            src={picNine}
-            alt="pic9"
-            className=""
-            style={{ height: "100%", width: "100%" }}
-          />
+          >
+            <Image
+              src={picEight}
+              alt="pic8"
+              style={{ height: "100%", width: "100%" }}
+            />
+          </Link>
+          <Link href="collection/8">
+            <Image
+              src={picNine}
+              alt="pic9"
+              style={{ height: "100%", width: "100%" }}
+            />
+          </Link>
         </div>
       </main>
     </div>
