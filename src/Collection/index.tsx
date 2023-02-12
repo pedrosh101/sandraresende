@@ -3,7 +3,9 @@ import Image from "next/image";
 import picOne from "../../public/images/pic1.jpg";
 import Link from "next/link";
 
+
 const Collection = () => {
+
   return (
     <>
       <div className="p-2 bg-clr1">

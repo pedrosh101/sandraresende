@@ -10,7 +10,7 @@ import picSix from "../public/images/pic6.jpg";
 import picSeven from "../public/images/pic7.jpg";
 import picEight from "../public/images/pic8.jpg";
 import picNine from "../public/images/pic9.jpg";
-import NavBar from "../src/Navbar/Navbar";
+import NavBar from "../src/Navbar";
 
 const Home: NextPage = () => {
   return (
