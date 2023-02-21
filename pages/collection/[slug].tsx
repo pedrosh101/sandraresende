@@ -1,9 +1,8 @@
+import { serie } from "../../data/serie";
 import Collection from "../../src/Collection";
 
-function collection() {
-  return (
-    <Collection />
-  );
-}
+const CollectionPage = () => {
+  return <Collection description={serie[0].description} img={serie[0].image} />;
+};
 
-export default collection;
+export default CollectionPage;

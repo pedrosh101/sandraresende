@@ -12,7 +12,7 @@ import picEight from "../public/images/pic8.jpg";
 import picNine from "../public/images/pic9.jpg";
 import NavBar from "../src/Navbar";
 
-const Home: NextPage = ({users}) => {
+const Home: NextPage = () => {
   return (
     <div className="p-2 bg-clr1">
       <Head>
@@ -79,27 +79,8 @@ const Home: NextPage = ({users}) => {
           </Link>
         </div>
       </main>
-      {users.map((user) => {
-        return (
-          <div key={user.id}>
-            <p>{user.name}</p>
-          </div>
-        );
-      })}
     </div>
   );
 };
 
 export default Home;
-
-export async function getStaticProps() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await response.json();
-  console.log(data);
-
-  return {
-    props: {
-      users: data,
-    },
-  };
-}
