@@ -36,46 +36,45 @@ const Home: NextPage = () => {
           <Link href="collection/2" className="row-start-1 row-end-2">
             <Image src={serie[1].image} width={1000} height={1000} alt="pic2" />
           </Link>
-          <Link href="collection/3" className="row-start-1 row-end-3">
+          <Link
+            href="collection/3"
+            className="col-start-2 row-start-2 row-end-3"
+          >
             <Image
               src={serie[2].image}
               width={1000}
               height={1000}
               alt="pic3"
-              style={{ height: "100%", width: "100%" }}
             />
           </Link>
-          <Link
-            href="collection/4"
-            className="col-start-2 row-start-2 row-end-3"
-          >
-            <Image src={serie[3].image} width={1000} height={1000} alt="pic4" />
+          <Link href="collection/4" className="row-start-1 row-end-3">
+            <Image src={serie[3].image} width={1000} height={1000} alt="pic4" style={{ height: "100%", width: "100%" }}/>
           </Link>
-          <Link href="collection/5" className="row-start-3 row-end-5">
-            <Image src={serie[4].image} width={1000} height={1000} alt="pic6" />
+          <Link href="collection/5" className="col-start-1 row-start-3 row-end-4">
+            <Image src={serie[4].image} width={1000} height={1000} alt="pic5" style={{ height: "100%", width: "100%" }}/>
           </Link>
-          <Link href="collection/6" className="row-start-3 row-end-5">
-            <Image src={serie[5].image} width={1000} height={1000} alt="pic7" />
+          <Link href="collection/6">
+            <Image src={serie[5].image} width={1000} height={1000} alt="pic6" style={{ height: "100%", width: "100%" }} />
           </Link>
           <Link
             href="collection/7"
-            className="col-start-1 row-start-3 row-end-4 "
+            className="row-start-3 row-end-5"
           >
             <Image
               src={serie[6].image}
               width={1000}
               height={1000}
-              alt="pic8"
-              style={{ height: "100%", width: "100%" }}
+              alt="pic7"
+
             />
           </Link>
-          <Link href="collection/8">
+          <Link href="collection/8" className="row-start-3 row-end-5">
             <Image
               src={serie[7].image}
               width={1000}
               height={1000}
-              alt="pic9"
-              style={{ height: "100%", width: "100%" }}
+              alt="pic8"
+
             />
           </Link>
         </div>

@@ -5,7 +5,7 @@ import Collection from "../../src/Collection";
 const CollectionPage = () => {
   const router = useRouter();
   const collectionId = router.query.slug;
-  const currentCollection = serie.find((s) => s.id === collectionId);
+  const currentCollection = serie.find((serie) => serie.id === collectionId);
 
   return currentCollection ? (
     <Collection

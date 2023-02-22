@@ -23,27 +23,27 @@ export const serie = [
     description: "Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
   },
   {
+    id: '5',
+    title: "serie5",
+    image: "/images/pic5.jpg",
+    description: "Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
+  },
+  {
     id: '6',
     title: "serie6",
     image: "/images/pic6.jpg",
-    description: "Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
+    description: "Pellentesque sed laoreet magna. Aenean pretium eu orci nec porttitor. Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
   },
   {
     id: '7',
     title: "serie7",
     image: "/images/pic7.jpg",
-    description: "Pellentesque sed laoreet magna. Aenean pretium eu orci nec porttitor. Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
+    description: "Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
   },
   {
     id: '8',
     title: "serie8",
     image: "/images/pic8.jpg",
-    description: "Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
-  },
-  {
-    id: '9',
-    title: "serie9",
-    image: "/images/pic9.jpg",
     description: "Pellentesque sed laoreet magna. Aenean pretium eu orci nec porttitor. Integer vestibulum orci ac nibh mattis, vel commodo ante hendrerit. Suspendisse ac massa efficitur, bibendum ipsum eu, pulvinar velit. Cras sed fringilla augue, iaculis commodo orci. Fusce vitae arcu et nulla facilisis ultrices."
   },
 ];
