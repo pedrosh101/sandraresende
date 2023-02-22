@@ -3,7 +3,7 @@ export const serie = [
     id: '1',
     title: "serie1",
     image: "/images/pic1.jpg",
-    description: "Ut tempus, felis quis ullamcorper pharetra, turpis turpis dapibus quam, at dapibus felis sem quis magna. Donec sit amet lobortis magna. Nam ultrices vitae leo ut congue. Sed rhoncus turpis id magna interdum ornare. Aenean ut pulvinar nisi. Praesent pellentesque elit ac augue pharetra, at tristique eros egestas. In malesuada tempus nunc, ut fringilla felis aliquam mollis. Maecenas aliquet mauris at rutrum luctus. In ut massa finibus, mattis enim et, pulvinar arcu."
+    description: "Ut tempus, felis quis ullamcorper pharetra, turpis turpis dapibus quam, at dapibus felis sem quis magna. Donec sit amet lobortis magna. Nam ultrices vitae leo ut congue. Sed rhoncus turpis id magna interdum ornare. Aenean ut pulvinar nisi. Praesent pellentesque elit ac augue pharetra, at tristique eros egestas. In malesuada tempus nunc, ut fringilla felis aliquam mollis. Maecenas aliquet mauris at rutrum luctus. In ult massa finibus, mattis enim et, pulvinar arcu."
   },
   {
     id: '2',
