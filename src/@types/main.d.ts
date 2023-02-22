@@ -1,6 +1,6 @@
 export type CollectionProp = {
-  id: string;
-  title: string;
+  id?: string;
+  title?: string;
   img: string;
   description: string;
 };

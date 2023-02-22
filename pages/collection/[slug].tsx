@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { serie } from "../../data/serie";
 import Collection from "../../src/Collection";
 
+
 const CollectionPage = () => {
   const router = useRouter();
   const collectionId = router.query.slug;
