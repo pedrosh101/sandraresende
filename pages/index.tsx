@@ -2,14 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import picOne from "../public/images/pic1.jpg";
-import picTwo from "../public/images/pic2.jpg";
-import picThree from "../public/images/pic3.jpg";
-import picFour from "../public/images/pic4.jpg";
-import picSix from "../public/images/pic6.jpg";
-import picSeven from "../public/images/pic7.jpg";
-import picEight from "../public/images/pic8.jpg";
-import picNine from "../public/images/pic9.jpg";
+import { serie } from "../data/serie";
 import NavBar from "../src/Navbar";
 
 const Home: NextPage = () => {
@@ -33,17 +26,21 @@ const Home: NextPage = () => {
         <div className="flex flex-col md:grid md:grid-cols-3 relative gap-2 md:mt-0 mt-5">
           <Link href="collection/1" className="row-start-1 row-end-3">
             <Image
-              src={picOne}
+              src={serie[0].image}
+              width={1000}
+              height={1000}
               alt="pic1"
               style={{ height: "100%", width: "100%" }}
             />
           </Link>
           <Link href="collection/2" className="row-start-1 row-end-2">
-            <Image src={picTwo} alt="pic2" />
+            <Image src={serie[1].image} width={1000} height={1000} alt="pic2" />
           </Link>
           <Link href="collection/3" className="row-start-1 row-end-3">
             <Image
-              src={picThree}
+              src={serie[2].image}
+              width={1000}
+              height={1000}
               alt="pic3"
               style={{ height: "100%", width: "100%" }}
             />
@@ -52,27 +49,31 @@ const Home: NextPage = () => {
             href="collection/4"
             className="col-start-2 row-start-2 row-end-3"
           >
-            <Image src={picFour} alt="pic4" />
+            <Image src={serie[3].image} width={1000} height={1000} alt="pic4" />
           </Link>
           <Link href="collection/5" className="row-start-3 row-end-5">
-            <Image src={picSix} alt="pic6" />
+            <Image src={serie[4].image} width={1000} height={1000} alt="pic6" />
           </Link>
           <Link href="collection/6" className="row-start-3 row-end-5">
-            <Image src={picSeven} alt="pic7" />
+            <Image src={serie[5].image} width={1000} height={1000} alt="pic7" />
           </Link>
           <Link
             href="collection/7"
             className="col-start-1 row-start-3 row-end-4 "
           >
             <Image
-              src={picEight}
+              src={serie[6].image}
+              width={1000}
+              height={1000}
               alt="pic8"
               style={{ height: "100%", width: "100%" }}
             />
           </Link>
           <Link href="collection/8">
             <Image
-              src={picNine}
+              src={serie[7].image}
+              width={1000}
+              height={1000}
               alt="pic9"
               style={{ height: "100%", width: "100%" }}
             />

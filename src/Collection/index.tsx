@@ -16,7 +16,7 @@ const Collection = ({description, img}: CollectionProp) => {
           </Link>
         </div>
         <div className="md:flex md:mt-0 mt-5 font-nhaas text-justify">
-          <Image src={img} width={500} height={500} alt="pic1" />
+          <Image src={img} width={800} height={800} alt="pic1" />
           <p className="mt-2">{description}</p>
         </div>
       </div>

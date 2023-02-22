@@ -1,8 +1,20 @@
+import { useRouter } from "next/router";
 import { serie } from "../../data/serie";
 import Collection from "../../src/Collection";
 
 const CollectionPage = () => {
-  return <Collection description={serie[0].description} img={serie[0].image} />;
+  const router = useRouter();
+  const collectionId = router.query.slug;
+  const currentCollection = serie.find((s) => s.id === collectionId);
+
+  return currentCollection ? (
+    <Collection
+      description={currentCollection.description}
+      img={currentCollection.image}
+    />
+  ) : (
+    <div>There is no serie with {collectionId}</div>
+  );
 };
 
 export default CollectionPage;
