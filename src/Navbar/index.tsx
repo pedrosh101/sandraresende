@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <nav className="md:hidden">
         <div className="flex">
-          <button onClick={handleClick}>{click ? <p>Menu</p> : ""}</button>
+          <button onClick={handleClick}>{click ? <p className="font-semibold">Menu</p> : ""}</button>
           <div className="flex relative">
             {click ? (
               ""

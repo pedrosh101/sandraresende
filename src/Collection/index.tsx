@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CollectionProp } from "../@types/main";
+import NavBar from "../Navbar";
 
 
 const Collection = ({description, img}: CollectionProp) => {
@@ -11,6 +12,7 @@ const Collection = ({description, img}: CollectionProp) => {
           <Link href="/">
             <h1 className="text-2xl font-bold">Sandra Resende</h1>
           </Link>
+          <NavBar />
         </div>
         <div className="flex flex-col mt-5 font-nhaas place-items-center gap-4 text-lg md:text-xl">
           <Image src={img} width={700} height={700} alt="pic1" />
