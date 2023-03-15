@@ -10,11 +10,11 @@ const NavBar = () => {
       <nav className="md:hidden">
         <div className="flex">
           <button onClick={handleClick}>{click ? <p className="font-semibold">Menu</p> : ""}</button>
-          <div className="flex relative">
+          <div className="relative flex">
             {click ? (
               ""
             ) : (
-              <div className="flex items-start bg-clr1 p-4 absolute -right-full -top-4 z-20">
+              <div className="absolute z-20 flex items-start p-4 bg-clr1 -right-full -top-4">
                 <ul>
                   <li>Arquivo</li>
                   <li>Biografia</li>
