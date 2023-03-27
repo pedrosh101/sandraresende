@@ -9,13 +9,13 @@ const Home: NextPage = () => {
   return (
     <div className="p-2 bg-clr1">
       <Head>
-        <title>Sandra Resende</title>
+        <title>fotografia</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="gap-2 md:flex">
         <div className="flex justify-between px-1 md:pr-16 md:flex-col md:justify-start font-nhaas md:place-items-start place-items-center">
-          <h1 className="text-2xl font-bold">Sandra Resende</h1>
+          <h1 className="text-2xl font-bold">fotografia</h1>
           <ul className="flex-col hidden mt-1 md:flex">
             <li>Arquivo</li>
             <li>Biografia</li>

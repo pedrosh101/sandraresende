@@ -10,7 +10,7 @@ const Collection = ({description, img}: CollectionProp) => {
       <div className="min-h-screen p-2 bg-clr1">
         <div className="flex justify-between px-1 md:pr-16 md:flex-col md:justify-start font-nhaas md:place-items-start place-items-center">
           <Link href="/">
-            <h1 className="text-2xl font-bold">Sandra Resende</h1>
+            <h1 className="text-2xl font-bold">fotografia</h1>
           </Link>
           <NavBar />
         </div>
